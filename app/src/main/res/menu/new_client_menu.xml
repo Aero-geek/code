@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/save_client"
+        android:title="@string/save_client_text" />
+    <item
+        android:id="@+id/delete_client"
+        android:title="@string/delete_text" />
+    <item
+        android:id="@+id/import_from_contact"
+        android:title="Import from contact"
+        android:visible="false" />
+</menu>

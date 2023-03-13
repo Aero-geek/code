@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white">
+
+        <com.example.invoicemaker.utils.SegmentedRadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="280.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10.0dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_btn_paid"
+                android:layout_width="60dp"
+                android:layout_height="40.0dip"
+                android:layout_marginRight="@dimen/margin_13"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="true"
+                android:fontFamily="@font/nexa_regular"
+                android:gravity="center"
+                android:text="Paid"
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_btn_clients"
+                android:layout_width="60dp"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:fontFamily="@font/nexa_regular"
+                android:gravity="center"
+                android:text="Clients" />
+        </com.example.invoicemaker.utils.SegmentedRadioGroup>
+
+        <Spinner
+            android:id="@+id/yearly_report"
+            style="@style/spinner_style"
+            android:layout_width="280.0dip"
+            android:layout_height="35.0dip"
+            android:layout_below="@+id/radio_group"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_5"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <LinearLayout
+            android:id="@+id/list_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yearly_report"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_20"
+            android:orientation="horizontal"
+            android:weightSum="0.9">
+
+            <TextView
+                android:id="@+id/month_name"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/nexa_regular"
+                android:padding="@dimen/margin_5"
+                android:text="Month Name"
+                android:textColor="@color/newAppColor"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/clients_number"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/nexa_regular"
+                android:gravity="right"
+                android:padding="@dimen/margin_5"
+                android:text="Clients"
+                android:textColor="@color/newAppColor" />
+
+            <TextView
+                android:id="@+id/invoice_number"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/nexa_regular"
+                android:gravity="right"
+                android:padding="@dimen/margin_5"
+                android:text="Invoices"
+                android:textColor="@color/newAppColor" />
+
+            <TextView
+                android:id="@+id/paid_amount"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/nexa_regular"
+                android:gravity="right"
+                android:padding="@dimen/margin_5"
+                android:text="Paid"
+                android:textColor="@color/newAppColor" />
+        </LinearLayout>
+
+        <com.example.invoicemaker.utils.NonScrollListView
+            android:id="@+id/list_report"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_title"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:divider="@null"
+            android:dividerHeight="0.0dip" />
+    </RelativeLayout>
+</ScrollView>

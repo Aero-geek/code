@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_photo_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    android:layout_marginTop="@dimen/margin_5"
+    android:background="@drawable/selected_tab"
+    android:paddingLeft="@dimen/margin_5"
+    android:paddingTop="@dimen/margin_8"
+    android:paddingRight="@dimen/margin_5"
+    android:paddingBottom="@dimen/margin_8">
+
+    <TextView
+        android:id="@+id/add_photo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Add photo"
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+    <ImageView
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/add_photo_text"
+        android:src="@drawable/ic_add_image"
+        app:tint="@color/white" />
+</RelativeLayout>

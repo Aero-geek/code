@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_5"
+    android:background="@drawable/selected_tab"
+    android:foreground="?selectableItemBackground"
+    android:paddingLeft="@dimen/margin_5"
+    android:paddingTop="@dimen/margin_8"
+    android:paddingRight="@dimen/margin_5"
+    android:paddingBottom="@dimen/margin_8">
+
+    <TextView
+        android:id="@+id/add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nexa_regular"
+
+        android:text="Add item"
+        android:textColor="@color/white"
+        android:textSize="@dimen/margin_16" />
+
+    <ImageView
+        android:layout_width="@dimen/margin_30"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/add_item"
+        android:paddingRight="@dimen/margin_5"
+        android:src="@drawable/ic_add_white_24dp" />
+
+    <TextView
+        android:id="@+id/unit_cost_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/add_item"
+        android:fontFamily="@font/nexa_regular"
+        android:gravity="right"
+        android:text="1 * Kes0.00"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/total_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unit_cost_quantity"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/add_item"
+        android:fontFamily="@font/nexa_regular"
+        android:gravity="right"
+        android:text="Kes0.00"
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+</RelativeLayout>

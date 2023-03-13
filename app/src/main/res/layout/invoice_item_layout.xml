@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_5"
+    android:background="@drawable/main_invoice_bg"
+    android:foreground="?selectableItemBackground"
+    android:padding="@dimen/margin_5">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pen"
+        android:textColor="@color/newAppColor"
+        android:textSize="@dimen/margin_16" />
+
+    <TextView
+        android:id="@+id/unit_cost_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/add_item"
+        android:gravity="right"
+        android:text="1 * Kes0.00"
+        android:textColor="@color/newAppColor" />
+
+    <TextView
+        android:id="@+id/total_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unit_cost_quantity"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/item_name"
+        android:gravity="right"
+        android:text="Kes0.00"
+        android:textColor="@color/newAppColor"
+        android:textSize="16.0sp" />
+</RelativeLayout>

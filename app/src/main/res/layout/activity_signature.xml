@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/banner_layout" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/signature_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/save_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginRight="@dimen/margin_5"
+            android:background="@drawable/selected_tab"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_10"
+            android:text="OK"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/clear_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginRight="@dimen/margin_2"
+            android:layout_toRightOf="@+id/save_sign"
+            android:background="@drawable/selected_tab"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_10"
+            android:text="Clear"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/delete_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginRight="@dimen/margin_2"
+            android:layout_toRightOf="@+id/clear_sign"
+            android:background="@drawable/selected_tab"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_10"
+            android:text="Delete"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/cancel_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginRight="@dimen/margin_2"
+            android:layout_toRightOf="@+id/delete_sign"
+            android:background="@drawable/selected_tab"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_10"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/signed_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_toRightOf="@+id/cancel_sign"
+            android:background="@drawable/selected_tab"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_10"
+            android:text="02/23/2018"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <com.kyanogen.signatureview.SignatureView
+        android:id="@+id/signature_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/signature_menu"
+        android:layout_below="@+id/app_bar_layout"
+        sign:backgroundColor="@color/white"
+        sign:enableSignature="true"
+        sign:penColor="#ff000000"
+        sign:penSize="5.0dip" />
+</RelativeLayout>

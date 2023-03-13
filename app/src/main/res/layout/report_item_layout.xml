@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_1"
+    android:layout_marginBottom="@dimen/margin_1"
+    android:clickable="false"
+    card_view:cardCornerRadius="@dimen/margin_2"
+    card_view:cardElevation="@dimen/margin_0">
+
+    <LinearLayout
+        android:id="@+id/reportsLinLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="0.9">
+
+        <TextView
+            android:id="@+id/month_name"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:fontFamily="@font/nexa_regular"
+            android:padding="@dimen/margin_5"
+            android:text="2018"
+            android:textColor="@color/newAppColor" />
+
+        <TextView
+            android:id="@+id/clients_number"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="right"
+            android:padding="@dimen/margin_5"
+            android:text="0"
+            android:textColor="@color/newAppColor" />
+
+        <TextView
+            android:id="@+id/invoice_number"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="right"
+            android:padding="@dimen/margin_5"
+            android:text="0"
+            android:textColor="@color/newAppColor" />
+
+        <TextView
+            android:id="@+id/paid_amount"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="right"
+            android:padding="@dimen/margin_5"
+            android:text="0.00"
+            android:textColor="@color/newAppColor" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

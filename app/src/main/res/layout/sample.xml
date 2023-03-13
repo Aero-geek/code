@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:paddingTop="@dimen/margin_2"
+    android:paddingBottom="@dimen/margin_2"
+    android:weightSum="2.0">
+
+    <TextView
+        android:id="@+id/import_from_contact"
+        android:layout_width="0.0dip"
+        android:layout_height="40.0dip"
+        android:layout_margin="@dimen/margin_5"
+        android:layout_weight="1.0"
+        android:background="@drawable/selected_tab"
+        android:fontFamily="@font/nexa_regular"
+        android:gravity="center"
+        android:text="Import from contact"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/client_report"
+        android:layout_width="0.0dip"
+        android:layout_height="40.0dip"
+        android:layout_margin="@dimen/margin_5"
+        android:layout_weight="0.5"
+        android:background="@drawable/selected_tab"
+        android:fontFamily="@font/nexa_regular"
+        android:gravity="center"
+        android:text="Report"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/save_client"
+        android:layout_width="0.0dip"
+        android:layout_height="40.0dip"
+        android:layout_margin="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_1"
+        android:layout_weight="1.0"
+        android:background="@drawable/selected_tab"
+        android:fontFamily="@font/nexa_regular"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/delete_client"
+        android:layout_width="0.0dip"
+        android:layout_height="40.0dip"
+        android:layout_margin="@dimen/margin_5"
+        android:layout_weight="0.5"
+        android:background="@drawable/selected_tab"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="@font/nexa_regular"
+        android:gravity="center"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+</LinearLayout>

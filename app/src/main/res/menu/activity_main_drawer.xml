@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_invoices"
+            android:icon="@drawable/ic_invoices"
+            android:title="@string/invoices_text" />
+        <item
+            android:id="@+id/nav_estimates"
+            android:icon="@drawable/ic_estimates"
+            android:title="@string/estimates_text" />
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/ic_reports"
+            android:title="@string/reports_text" />
+        <item
+            android:id="@+id/nav_my_items"
+            android:icon="@drawable/ic_items"
+            android:title="@string/my_items" />
+        <item
+            android:id="@+id/nav_clients"
+            android:icon="@drawable/ic_clients"
+            android:title="@string/clients_text" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/app_logo"
+            android:title="@string/account_text"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/app_logo"
+            android:title="@string/support_text"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings_text" />
+
+        <item
+            android:id="@+id/rateus"
+            android:icon="@drawable/rate"
+            android:title="@string/rateus" />
+
+
+        <item
+            android:id="@+id/moreapp"
+            android:icon="@drawable/more"
+            android:title="@string/more" />
+    </group>
+</menu>

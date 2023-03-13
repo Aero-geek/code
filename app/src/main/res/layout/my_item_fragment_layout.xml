@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/my_item_searchview"
+        style="@style/SearchViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/searchview_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:defaultQueryHint="search"
+        app:iconifiedByDefault="false" />
+
+    <TextView
+        android:id="@+id/no_item_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_item_searchview"
+        android:fontFamily="@font/nexa_regular"
+        android:gravity="center"
+        android:padding="@dimen/margin_5"
+        android:paddingTop="@dimen/margin_5"
+        android:text="@string/no_item_message"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_items_rv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/my_item_searchview"
+        android:padding="5.0dip" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/newAppColor"
+        app:borderWidth="@dimen/margin_2"
+        app:srcCompat="@drawable/ic_add_white_24dp" />
+</RelativeLayout>

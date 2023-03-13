@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/take_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill|end|start"
+        android:background="?selectableItemBackground"
+        android:fontFamily="@font/nexa_regular"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_15"
+        android:paddingBottom="@dimen/margin_15"
+        android:text="Take photo"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/gallery_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill|end|start"
+        android:background="?selectableItemBackground"
+        android:fontFamily="@font/nexa_regular"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_15"
+        android:paddingBottom="@dimen/margin_15"
+        android:text="Gallery"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/browse_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill|end|start"
+        android:background="?selectableItemBackground"
+        android:fontFamily="@font/nexa_regular"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_15"
+        android:paddingBottom="@dimen/margin_15"
+        android:text="Browse"
+        android:textSize="16.0sp" />
+</LinearLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/margin_15">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_color">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/margin_5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/invoice_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:foreground="?selectableItemBackground"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_8"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_8">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/invoice_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:layout_toLeftOf="@+id/due_info"
+                        android:fontFamily="@font/nexa_regular"
+                        android:text=""
+                        android:textColor="@color/newAppColor"
+                        android:textSize="20.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/due_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/nexa_regular"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/newAppColor"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/business_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:layout_toLeftOf="@+id/creation_date"
+                        android:fontFamily="@font/nexa_regular"
+                        android:text=""
+                        android:textColor="@color/newAppColor"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/creation_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/nexa_regular"
+                        android:gravity="right|center_vertical"
+                        android:text=""
+                        android:textColor="@color/newAppColor"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/client_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/selected_tab"
+                android:foreground="?selectableItemBackground"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_8"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_8">
+
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nexa_regular"
+                    android:paddingRight="@dimen/margin_5"
+                    android:text="Client"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/client_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/nexa_regular"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:id="@+id/addClientImg"
+                    android:layout_width="@dimen/margin_30"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="@dimen/margin_5"
+                    android:src="@drawable/ic_add_white_24dp"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/invoice_items_rv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_6"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_6"
+                android:visibility="gone" />
+
+            <include layout="@layout/add_item_layout" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/selected_tab"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_6"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_6">
+
+                <TextView
+                    android:id="@+id/subtotal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nexa_regular"
+                    android:text="Subtotal"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/subtotal_amount"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/subtotal_text"
+                    android:fontFamily="@font/nexa_regular"
+                    android:gravity="right"
+                    android:text="Kes0.00"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/subtotal_layout" />
+
+            <RelativeLayout
+                android:id="@+id/due_amount_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selected_tab"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_6"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_6">
+
+                <TextView
+                    android:id="@+id/balance_due_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nexa_regular"
+                    android:text="Balance Due"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/due_amount"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/balance_due_text"
+                    android:fontFamily="@font/nexa_regular"
+                    android:gravity="right"
+                    android:text="Kes0.00"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <include layout="@layout/add_payment_layout" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/item_images_rv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_6"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_6"
+                android:textColor="@color/newAppColor"
+                android:visibility="gone" />
+
+            <include layout="@layout/add_photo_layout" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/preview_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/newAppColor"
+        app:borderWidth="@dimen/margin_2"
+        app:srcCompat="@drawable/ic_pdf_white" />
+</RelativeLayout>

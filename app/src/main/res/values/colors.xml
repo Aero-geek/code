@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_color">#f9f9f9</color>
+
+    <color name="bg_login">#ff26ae90</color>
+    <color name="bg_main">#ff428bca</color>
+    <color name="bg_register">#ff2e3237</color>
+    <color name="black">#ff232323</color>
+    <color name="black_tranparent_20">#33232323</color>
+
+    <color name="btn_login">#ff26ae90</color>
+    <color name="btn_login_bg">#ffeceef1</color>
+    <color name="btn_logut_bg">#ffff6861</color>
+
+    <color name="cardview_dark_background">#ff424242</color>
+    <color name="cardview_light_background">#ffffffff</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="colorAccent">#ff428bca</color>
+    <color name="colorApp">#008ea6</color>
+    <color name="colorPrimary">#008ea6</color>
+    <color name="colorPrimaryDark">#008ea6</color>
+
+    <color name="delete_color_bg">#ffff0000</color>
+
+
+    <color name="green">#ff0caf8b</color>
+
+    <color name="input_login">#ff222222</color>
+    <color name="input_login_hint">#ff999999</color>
+    <color name="input_register">#ff888888</color>
+    <color name="input_register_bg">#ff3b4148</color>
+    <color name="input_register_hint">#ff5e6266</color>
+    <color name="lbl_name">#ff333333</color>
+
+    <color name="notice_white">#ffffffff</color>
+
+    <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="penRoyalBlue">#ff4169e1</color>
+
+    <color name="rng_gray_lite">#ffe6e6e6</color>
+
+    <color name="transparent_grey">#80444444</color>
+    <color name="white">#f9f9f9</color>
+
+    <color name="newAppColor">#008ea6</color>
+    <color name="newWhiteColor">#f9f9f9</color>
+    <color name="transperent">#00000000</color>
+</resources>

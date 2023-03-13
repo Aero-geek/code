@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_15"
+    android:layout_marginTop="@dimen/margin_3"
+    android:layout_marginRight="@dimen/margin_15"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_5"
+    android:paddingTop="@dimen/margin_3"
+    android:paddingRight="@dimen/margin_5"
+    android:paddingBottom="@dimen/margin_6">
+
+    <RelativeLayout
+        android:id="@+id/discount_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:paddingTop="@dimen/margin_2"
+        android:paddingBottom="@dimen/margin_2">
+
+        <TextView
+            android:id="@+id/discount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/invoice_discount"
+            android:fontFamily="@font/nexa_regular"
+            android:text="Discount"
+            android:textColor="@color/newAppColor"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/invoice_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="right"
+            android:text="Kes0.00"
+            android:textColor="@color/newAppColor"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shipping_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:paddingTop="@dimen/margin_2"
+        android:paddingBottom="@dimen/margin_2">
+
+        <TextView
+            android:id="@+id/shipping_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/shipping_amount"
+            android:fontFamily="@font/nexa_regular"
+            android:text="Shipping"
+            android:textColor="@color/newAppColor"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/shipping_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="right"
+            android:text="Kes0.00"
+            android:textColor="@color/newAppColor"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tax_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:paddingTop="@dimen/margin_2"
+        android:paddingBottom="@dimen/margin_2">
+
+        <TextView
+            android:id="@+id/tax_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tax_amount"
+            android:fontFamily="@font/nexa_regular"
+            android:text="Tax"
+            android:textColor="@color/newAppColor"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tax_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="right"
+            android:text="Kes0.00"
+            android:textColor="@color/newAppColor"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/total_amount_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_2"
+        android:paddingBottom="@dimen/margin_2">
+
+        <TextView
+            android:id="@+id/total_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/total_amount"
+            android:fontFamily="@font/nexa_regular"
+            android:text="Total"
+            android:textColor="@color/newAppColor"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="right"
+            android:text="Kes0.00"
+            android:textColor="@color/newAppColor"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/paid_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:paddingTop="@dimen/margin_2"
+        android:paddingBottom="@dimen/margin_2">
+
+        <TextView
+            android:id="@+id/paid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/paid_amount"
+            android:fontFamily="@font/nexa_regular"
+            android:text="Paid"
+            android:textColor="@color/newAppColor"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/paid_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/nexa_regular"
+            android:gravity="right"
+            android:text="Kes0.00"
+            android:textColor="@color/newAppColor"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+</LinearLayout>
